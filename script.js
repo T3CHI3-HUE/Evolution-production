@@ -1,3 +1,19 @@
+// Hamburger menu functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger-menu');
+  const navLinks = document.querySelector('.nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+    // Optional: allow keyboard access
+    hamburger.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        navLinks.classList.toggle('active');
+      }
+    });
+  }
+});
 // Gallery View More/Less: Toggle images for each section
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.gallery-section').forEach(section => {

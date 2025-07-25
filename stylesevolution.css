@@ -1,3 +1,72 @@
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .text-overlay, .text-overlay1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 8px auto 0 auto;
+    display: block;
+    width: 100%;
+  }
+  .about-box .circle {
+    display: block;
+    margin: 0 auto 16px auto;
+    max-width: 120px;
+    height: auto;
+  }
+}
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  z-index: 1002;
+}
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background: #222;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    top: 18px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 100vw;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    z-index: 1001;
+    padding: 24px 0 16px 0;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .navbar {
+    position: relative;
+  }
+  .nav-links li {
+    margin: 16px 0;
+  }
+}
 /* Footer styles moved from index.html */
 .footer {
   position: relative;
