@@ -1,15 +1,35 @@
-// Hamburger menu functionality
+// Hamburger menu with slide-out functionality
 document.addEventListener('DOMContentLoaded', function () {
   const hamburger = document.getElementById('hamburger-menu');
-  const navLinks = document.querySelector('.nav-links');
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', function () {
-      navLinks.classList.toggle('active');
-    });
-    // Optional: allow keyboard access
+  const mobileNav = document.getElementById('mobile-nav');
+  const closeArea = document.getElementById('close-area');
+
+  function openMobileNav() {
+    mobileNav.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileNav() {
+    mobileNav.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburger && mobileNav && closeArea) {
+    hamburger.addEventListener('click', openMobileNav);
     hamburger.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ') {
-        navLinks.classList.toggle('active');
+        openMobileNav();
+      }
+    });
+    closeArea.addEventListener('click', closeMobileNav);
+    mobileNav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        closeMobileNav();
+      }
+    });
+    // Optional: close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+        closeMobileNav();
       }
     });
   }
