@@ -21,19 +21,19 @@
   }
   .hamburger span {
     display: block;
-    height: 5px;
+    height: 8px;
     width: 32px;
     background: #222;
-    margin: 4px 0;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+    margin: 6px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
     transition: 0.3s;
   }
 }
 @media (max-width: 768px) {
   .logo {
-    width: 18px;
-    height: 18px;
+    width: 5px;
+    height: 5px;
     object-fit: cover;
     margin: 0 8px 0 0;
     vertical-align: middle;
