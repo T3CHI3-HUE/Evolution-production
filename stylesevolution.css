@@ -29,7 +29,7 @@ body.dark-mode .ceo {
     display: block;
     height: 8px;
     width: 32px;
-    background: #222;
+    background: #ffffff;
     margin: 6px 0;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.18);
@@ -57,9 +57,10 @@ body.dark-mode .ceo {
 }
 .hamburger span {
   display: block;
+
   height: 8px;
   width: 28px;
-  background: #222;
+  background: #ffffff;
   margin: 5px 0;
   border-radius: 4px;
   transition: 0.3s;
@@ -452,7 +453,7 @@ h5 {
 }
 .contact-info {
     text-align: center;
-    color: #f0f0f0;
+    color: #00fff7;
     padding-top: 3%;
 }
 .background {
@@ -571,7 +572,12 @@ body {
   }
   .background {
     height: auto;
-    padding: 20px 0;
+    padding: 60px 0 20px 0;
+  }
+  .contact-info {
+    margin-top: 40px;
+    padding-top: 40px;
+    color: #00fff7;
   }
   .icon {
     width: 24px;
