@@ -530,17 +530,17 @@ body {
     text-align: center;
     width: 100%;
     position: absolute;
-    left: 50%;
+    left: 0%;
     transform: translateX(-50%);
     background: transparent;
   }
   .text-overlay {
-    top: 120px;
-    margin-bottom: 18px;
+    top: 150px;
+    margin-bottom: 10px;
   }
   .text-overlay1 {
     top: 160px;
-    margin-top: 18px;
+    margin-top: 10px;
   }
   .about-box, .gallery-container, .gallery-section {
     max-width: 98vw;
