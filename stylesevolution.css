@@ -126,20 +126,29 @@ body.dark-mode .ceo {
   }
 }
 @media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
   .hero h1 {
     display: flex;
     align-items: center;
     gap: 6px;
+    justify-content: center;
     font-size: 1rem;
-    position: absolute;
-    top: 56px;
-    left: 16px;
     margin: 0;
     z-index: 2;
     background: transparent;
     color: #636262;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: static;
+    width: 100%;
+    left: unset;
+    top: unset;
   }
   .logo {
     width: 28px;
@@ -255,6 +264,8 @@ h1 {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
     margin-top: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: static;
+    width: 100%;
 }
 .logo {
     width: 32px;
@@ -274,6 +285,11 @@ h1 {
     background-repeat: no-repeat;
     margin-top: 0%;
     margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .navbar {
     position: fixed; /* Makes the navbar fixed */
@@ -532,16 +548,18 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+    justify-content: center;
     font-size: 1rem;
-    position: absolute;
-    top: 56px;
-    left: 16px;
     margin: 0;
     z-index: 2;
     background: transparent;
     color: #636262;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: static;
+    width: 100%;
+    left: unset;
+    top: unset;
   }
   .text-overlay, .text-overlay1 {
     font-size: 1rem;
