@@ -510,20 +510,8 @@ body {
     margin: 0;
     z-index: 2;
   }
-  .hero h1 {
-    font-size: 1rem;
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    top: 56px;
-    left: 52px;
-    margin: 0;
-    z-index: 2;
-    background: transparent;
-    width: auto;
-    color: #636262;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  .hero h1, h1 {
+    display: none !important;
   }
   .text-overlay, .text-overlay1 {
     font-size: 1rem;
@@ -539,7 +527,7 @@ body {
     margin-bottom: 10px;
   }
   .text-overlay1 {
-    top: 160px;
+    top: 100px;
     margin-top: 10px;
   }
   .about-box, .gallery-container, .gallery-section {
