@@ -543,14 +543,36 @@ body {
     height: 60px;
     margin-top: 10px;
   }
-  .text-overlay, .text-overlay1 {
-    font-size: 120%;
-    padding-top: 0;
+  .text-overlay {
+    position: absolute;
+    top: 48%;
     left: 50%;
-    top: 55%;
     transform: translate(-50%, -50%);
+    font-size: 1.1rem;
     width: 90vw;
-    word-break: break-word;
+    text-align: center;
+    color: #eaeaea;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 24px;
+    background: transparent;
+    z-index: 2;
+  }
+  .text-overlay1 {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    width: 90vw;
+    text-align: center;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: transparent;
+    z-index: 2;
   }
   .about-box, .gallery-container, .gallery-section {
     max-width: 98vw;
