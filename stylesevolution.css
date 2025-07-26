@@ -546,7 +546,7 @@ body {
   .text-overlay {
     position: absolute;
     top: 48%;
-    left: 50%;
+    left: 0%;
     transform: translate(-50%, -50%);
     font-size: 1.1rem;
     width: 90vw;
@@ -561,8 +561,8 @@ body {
   }
   .text-overlay1 {
     position: absolute;
-    top: 58%;
-    left: 50%;
+    top: 38%;
+    left: 0%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
     width: 90vw;
