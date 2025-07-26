@@ -523,11 +523,11 @@ body {
     background: transparent;
   }
   .text-overlay {
-    top: 150px;
+    top: 180px;
     margin-bottom: 10px;
   }
   .text-overlay1 {
-    top: 100px;
+    top: 150px;
     margin-top: 10px;
   }
   .about-box, .gallery-container, .gallery-section {
