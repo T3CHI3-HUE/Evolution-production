@@ -126,46 +126,23 @@ body.dark-mode .ceo {
   }
 }
 @media (max-width: 768px) {
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
   .hero h1 {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    justify-content: center;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .text-overlay, .text-overlay1 {
     font-size: 1rem;
-    margin: 0;
-    z-index: 2;
-    background: transparent;
-    color: #636262;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: static;
+    text-align: center;
+    margin: 8px auto 0 auto;
+    display: block;
     width: 100%;
-    left: unset;
-    top: unset;
   }
-  .logo {
-    width: 28px;
-    height: 28px;
-    margin-right: 0;
-    margin-top: 0;
-    padding: 0;
-    position: static;
-  }
-  .text-overlay {
-    top: 120px;
-    margin-bottom: 0;
-  }
-  .text-overlay1 {
-    top: 140px;
-    margin-top: 0;
-    padding-top: 30px;
+  .about-box .circle {
+    display: block;
+    margin: 0 auto 16px auto;
+    max-width: 120px;
+    height: auto;
   }
 }
 /* Hamburger menu styles */
@@ -255,26 +232,22 @@ body.dark-mode .ceo {
   margin-right: auto;
 }
 h1 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    /* Remove float, use flex for logo+text alignment */
-    font-size: large;
+    float: left;
+    text-decoration: double;
+    padding-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #636262;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
     margin-top: 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: static;
-    width: 100%;
+    font-size:large;
 }
 .logo {
-    width: 32px;
-    height: 32px;
+    width: 5%;
+    height: 6%;
+    padding-left: 0%;
     border-radius: 30px;
-    object-fit: cover;
-    margin-right: 8px;
-    vertical-align: middle;
-    position: static;
+    padding-top: 0%;
+    margin-top: 30px;
 }
 .hero {
     background-image: url(images/image17.jpeg); 
@@ -285,11 +258,6 @@ h1 {
     background-repeat: no-repeat;
     margin-top: 0%;
     margin-bottom: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 .navbar {
     position: fixed; /* Makes the navbar fixed */
@@ -353,22 +321,20 @@ body.dark-mode{
     font-weight: 800;
     font-style: inherit;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 0;
 }
 .text-overlay1 {
     position: absolute;
-    top: 48%; /* Move up for less space */
+    top: 45%;
     left: 38%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #f5f5f5;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    padding-top: 60px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);;
+    padding-top: 100px;
     font-size: 150%;
     font-weight: 300;
     font-style: oblique;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 0;
 }
 .about-box {
     justify-content: center;
@@ -545,39 +511,36 @@ body {
     z-index: 2;
   }
   .hero h1 {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    justify-content: center;
     font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 56px;
+    left: 52px;
     margin: 0;
     z-index: 2;
     background: transparent;
+    width: auto;
     color: #636262;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: static;
-    width: 100%;
-    left: unset;
-    top: unset;
   }
   .text-overlay, .text-overlay1 {
     font-size: 1rem;
     text-align: center;
     width: 100%;
     position: absolute;
-    left: 0%;
+    left: 50%;
     transform: translateX(-50%);
     background: transparent;
   }
   .text-overlay {
-    top: 150px;
-    margin-bottom: 0;
+    top: 120px;
+    margin-bottom: 18px;
   }
   .text-overlay1 {
     top: 160px;
-    margin-top: 0;
-    padding-top: 30px;
+    margin-top: 18px;
   }
   .about-box, .gallery-container, .gallery-section {
     max-width: 98vw;
