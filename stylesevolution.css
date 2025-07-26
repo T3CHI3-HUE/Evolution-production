@@ -541,12 +541,7 @@ body {
     padding: 20px 0;
     background-position: center top;
   }
-  h1 {
-    font-size: 1.1em;
-    margin-top: 10px;
-    text-align: center;
-    float: none;
-  }
+  /* Remove conflicting h1 styles, use only .hero h1 for mobile */
   .logo {
     width: 60px;
     height: 60px;
